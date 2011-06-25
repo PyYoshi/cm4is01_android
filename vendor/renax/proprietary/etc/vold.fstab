@@ -1,0 +1,2 @@
+dev_mount sdcard /mnt/sdcard auto /devices/platform/goldfish_mmc.0 /devices/virtual/block/stheno
+

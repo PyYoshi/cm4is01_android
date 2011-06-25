@@ -1,0 +1,49 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+    <interface name="org.openobex.Session">
+        <method name="GetProperties">
+            <arg type="a{sv}" direction="out"/>
+        </method>
+        <method name="AssignAgent">
+            <arg type="o" direction="in"/>
+        </method>
+        <method name="ReleaseAgent">
+            <arg type="o" direction="in"/>
+        </method>
+        <method name="Close">
+        </method>
+        <signal name="ConnectComplete">
+        </signal>
+        <signal name="ConnectFailed">
+            <arg type="s"/>
+        </signal>
+        <signal name="Closed">
+        </signal>
+    </interface>
+    <interface name="org.openobex.FileTransfer">
+        <method name="ChangeFolder">
+            <arg type="s" direction="in"/>
+        </method>
+        <method name="CreateFolder">
+            <arg type="s" direction="in"/>
+        </method>
+        <method name="ListFolder">
+            <arg type="aa{sv}" direction="out"/>
+        </method>
+        <method name="GetFile">
+            <arg type="ss" direction="in"/>
+        </method>
+        <method name="PutFile">
+            <arg type="ss" direction="in"/>
+        </method>
+        <method name="CopyFile">
+            <arg type="ss" direction="in"/>
+        </method>
+        <method name="MoveFile">
+            <arg type="ss" direction="in"/>
+        </method>
+        <method name="Delete">
+            <arg type="s" direction="in"/>
+        </method>
+    </interface>
+</node>

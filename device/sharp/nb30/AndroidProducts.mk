@@ -1,0 +1,3 @@
+
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/nb30.mk

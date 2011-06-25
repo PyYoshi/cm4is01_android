@@ -1,0 +1,5 @@
+<object name="/org/openobex"/>
+<interface name="org.openobex"/>
+<folder name="/sdcard"/>
+<dbus name="system"/>
+<version name="2009-12-18-09-00"/>

@@ -1,0 +1,11 @@
+# CyanogenMod Extras
+
+# Compcache - handle at boot
+service compcache /system/bin/handle_compcache
+    user root
+    group root
+    oneshot
+
+# Enable cache on Google Maps
+# FIXED: Add this in build.prop
+# ro.opengles.version=131072
