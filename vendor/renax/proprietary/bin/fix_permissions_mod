@@ -1,0 +1,10 @@
+#!/system/bin/sh
+mount -o remount,rw /dev/block/mtdblock5 /system
+chmod 06755 /system/xbin/su
+chmod 06755 /system/xbin/hcitool
+chmod 06755 /system/xbin/librank
+chmod 06755 /system/xbin/procmem
+chmod 06755 /system/xbin/procrank
+chown dhcp.shell /system/etc/dhcpcd/dhcpcd-run-hooks
+chmod 0755 /system/etc/dhcpcd/dhcpcd-run-hooks
+mount -o remount,ro /dev/block/mtdblock5 /system
