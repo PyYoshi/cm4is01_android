@@ -104,9 +104,6 @@ static struct perms_ devperms[] = {
     /* the msm hw3d client device node is world writable/readable. */
     { "/dev/msm_hw3dc",     0666,   AID_ROOT,       AID_ROOT,       0 },
 
-    /* gpu driver for adreno200 is globally accessible */
-    { "/dev/kgsl",          0666,   AID_ROOT,       AID_ROOT,       1 },
-
         /* these should not be world writable */
     { "/dev/diag",          0660,   AID_RADIO,      AID_RADIO,        0 },
     { "/dev/diag_arm9",     0660,   AID_RADIO,      AID_RADIO,        0 },
@@ -142,7 +139,6 @@ static struct perms_ devperms[] = {
     { "/dev/akm8975_daemon",0640,   AID_COMPASS,    AID_SYSTEM,     0 },
     { "/dev/akm8975_aot",   0640,   AID_COMPASS,    AID_SYSTEM,     0 },
     { "/dev/akm8973_daemon",0640,   AID_COMPASS,    AID_SYSTEM,     0 },
-    { "/dev/akm8973_aot",   0640,   AID_COMPASS,    AID_SYSTEM,     1 },
     { "/dev/bma150",        0640,   AID_COMPASS,    AID_SYSTEM,     0 },
     { "/dev/bma020",        0640,   AID_COMPASS,    AID_SYSTEM,     0 },
     { "/dev/cm3602",        0640,   AID_COMPASS,    AID_SYSTEM,     0 },
